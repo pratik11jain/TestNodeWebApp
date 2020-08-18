@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>
+        <%=name%>
+    </title>
+</head>
+
+<body>
+
+    <div>
+        <% videos.forEach(v => {%>
+        <div>
+            <h2><%=v.title%></h2>
+        </div>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/<%=v.videoId%>" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        </b>
+        <% });%>
+    </div>
+
+</body>
+
+</html>
